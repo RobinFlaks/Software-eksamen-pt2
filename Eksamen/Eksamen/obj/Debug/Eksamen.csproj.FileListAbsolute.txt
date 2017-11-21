@@ -1,0 +1,7 @@
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\obj\Debug\Eksamen.csprojResolveAssemblyReference.cache
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\obj\Debug\Eksamen.csproj.CoreCompileInputs.cache
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\bin\Debug\Eksamen.exe.config
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\bin\Debug\Eksamen.exe
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\bin\Debug\Eksamen.pdb
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\obj\Debug\Eksamen.exe
+C:\Users\robin\Documents\GitHub\Software_Eksamen\Eksamen\Eksamen\obj\Debug\Eksamen.pdb
