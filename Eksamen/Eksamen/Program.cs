@@ -3,40 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
-
 
 namespace Eksamen
-
 {
-    public class CustomerGenerator
+    class Program
     {
-		//Skal skrive om alt så dette blir main, der alt skjer, muligens lage alt fra facade som kjøres på mainen.
-        private System.Object ThreadLock = new System.Object();
-        static int CustomerID = 0;
-        public void ThreadCustomer()
+        public static void Main()
         {
-            string[] Names = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
-            Random Rnd = new Random();
-            string Name = Names[CustomerID];
-            CustomerID++;
+            Factory MainFactory = new Factory();
+            MainFactory.StartProducing();
 
-            while (Bazzar.GetFinished() == false)
-            {
-                while (Bazzar.GetItemAvailable() == true)
-                {
-                    lock(ThreadLock);
-                    Bazzar.SetItemAvailable(false);
-                    Console.WriteLine(Name + " bought Item #" + Bazzar.GetItemNumber());
-                }
-                Thread.Sleep(0);
-            }
-        }
-
-        public void CreateCustomer()
-        {
-            Thread t = new Thread(new ThreadStart(ThreadCustomer));
-            t.Start();
         }
     }
 }

@@ -8,11 +8,11 @@ using System.Threading;
 
 namespace Eksamen
 {
-    class Store
+    public static class Store
     {
         public static void ThreadStore()
         {
-            while (Bazzar.GetFinished() == false)
+			while (Bazzar.GetFinished() == false)
             {
                 for (int i = 1; i <= 25; i++)
                 {
@@ -22,7 +22,7 @@ namespace Eksamen
                     }
                     Bazzar.SetItemAvailable(true);
                     Bazzar.SetItemNumber(i);
-                    Console.WriteLine("Store put item #" + i + " up for sale");
+                    Console.WriteLine("Store put pack #" + i + " up for sale");
                     Thread.Sleep(800);
                 }
                 Bazzar.SetFinished(true);
