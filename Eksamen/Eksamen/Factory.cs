@@ -12,6 +12,7 @@ namespace Eksamen
         {
             Bazzar Bazz = Bazzar.Instance;
             Store.CreateStore();
+            Store.CreateStore();
             CustomerGenerator Customer = new CustomerGenerator();
             Customer.CreateCustomer();
             Customer.CreateCustomer();

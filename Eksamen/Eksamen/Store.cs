@@ -10,8 +10,12 @@ namespace Eksamen
 {
     public static class Store
     {
+        static int InnNumber = 0;
+        static string[] Names = new string[] { "Lion's Pride Inn", "Shady Rest Inn" };
         public static void ThreadStore()
         {
+            string Inn = Names[InnNumber];
+            InnNumber++;
             Bazzar Bazz = Bazzar.Instance;
             while (Bazz.GetFinished() == false)
             {
@@ -21,9 +25,10 @@ namespace Eksamen
                     {
                         Thread.Sleep(0);
                     }
-                    Bazz.SetItemAvailable(true);
+ 
                     Bazz.SetItemNumber(i);
-                    Console.WriteLine("Store put pack #" + i + " up for sale");
+                    Console.WriteLine( Inn + " put pack #" + i + " up for sale");
+                    Bazz.SetItemAvailable(true);
                     Thread.Sleep(800);
                 }
                 Bazz.SetFinished(true);
