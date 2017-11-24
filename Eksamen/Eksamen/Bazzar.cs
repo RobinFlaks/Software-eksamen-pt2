@@ -6,39 +6,62 @@ using System.Threading.Tasks;
 
 namespace Eksamen
 {
-    static class Bazzar
+    public sealed class Bazzar
     {
-        public static Boolean Finished;
-        public static int ItemNumber;
-        public static Boolean ItemAvailable;
+        private Boolean Finished;
+        private int ItemNumber;
+        private Boolean ItemAvailable;
+        private static readonly Bazzar TheBazzar = new Bazzar();
 
-        public static void SetFinished(Boolean Finished)
+        // Explicit static constructor to tell C# compiler
+        // not to mark type as beforefieldinit
+
+        static Bazzar()
         {
-            Bazzar.Finished = Finished;
         }
 
-        public static void SetItemNumber(int ItemNumber)
+        private Bazzar()
         {
-            Bazzar.ItemNumber = ItemNumber;
         }
 
-        public static void SetItemAvailable(Boolean ItemAvailable)
+        public static Bazzar Instance
         {
-            Bazzar.ItemAvailable = ItemAvailable;
+            get
+            {
+                return TheBazzar;
+            }
+        }
+    
+
+        public void SetFinished(Boolean Finished)
+        {
+            this.Finished = Finished;
         }
 
-        public static Boolean GetFinished()
+        public void SetItemNumber(int ItemNumber)
+        {
+            this.ItemNumber = ItemNumber;
+        }
+
+        public void SetItemAvailable(Boolean ItemAvailable)
+        {
+            this.ItemAvailable = ItemAvailable;
+        }
+
+        public Boolean GetFinished()
         {
             return Finished;
         }
 
-        public static int GetItemNumber()
+        public int GetItemNumber()
         {
             return ItemNumber;
         }
 
-        public static Boolean GetItemAvailable()
+        public Boolean GetItemAvailable()
         {
+            Bazzar Bazz = Bazzar.Instance;
+            lock (Bazz) ;
             return ItemAvailable;
         }
     }

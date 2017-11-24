@@ -12,20 +12,21 @@ namespace Eksamen
     {
         public static void ThreadStore()
         {
-			while (Bazzar.GetFinished() == false)
+            Bazzar Bazz = Bazzar.Instance;
+            while (Bazz.GetFinished() == false)
             {
                 for (int i = 1; i <= 25; i++)
                 {
-                    while (Bazzar.GetItemAvailable() == true)
+                    while (Bazz.GetItemAvailable() == true)
                     {
                         Thread.Sleep(0);
                     }
-                    Bazzar.SetItemAvailable(true);
-                    Bazzar.SetItemNumber(i);
+                    Bazz.SetItemAvailable(true);
+                    Bazz.SetItemNumber(i);
                     Console.WriteLine("Store put pack #" + i + " up for sale");
                     Thread.Sleep(800);
                 }
-                Bazzar.SetFinished(true);
+                Bazz.SetFinished(true);
             }
         }
 

@@ -12,6 +12,7 @@ namespace Eksamen
         {
             Factory MainFactory = new Factory();
             MainFactory.StartProducing();
+            Console.ReadKey();
 
         }
     }

@@ -12,7 +12,6 @@ namespace Eksamen
     public class CustomerGenerator
     {
 		//Skal skrive om alt så dette blir main, der alt skjer, muligens lage alt fra facade som kjøres på mainen.
-        private static readonly Object ThreadLock = new Object();
         static int CustomerID = 0;
         public static void ThreadCustomer()
         {
@@ -21,16 +20,16 @@ namespace Eksamen
 
 			string[] Names = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
             Random Rnd = new Random();
+            int i = Rnd.Next(0, 8);
             string Name = Names[CustomerID];
             CustomerID++;
-
-            while (Bazzar.GetFinished() == false)
+            Bazzar Bazz = Bazzar.Instance;
+            while (Bazz.GetFinished() == false)
             {
-                while (Bazzar.GetItemAvailable() == true)
+                while (Bazz.GetItemAvailable() == true)
                 {
-                    lock(ThreadLock);
-                    Bazzar.SetItemAvailable(false);
-                    Console.WriteLine(Name + " bought Pack #" + Bazzar.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
+                    Bazz.SetItemAvailable(false);
+                    Console.WriteLine(Name + " bought Pack #" + Bazz.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
                 }
                 Thread.Sleep(0);
             }
