@@ -15,6 +15,13 @@ namespace Eksamen
             CustomerGenerator Customer = new CustomerGenerator();
             Customer.CreateCustomer();
             Customer.CreateCustomer();
+            Customer.CreateCustomer();
+            Customer.CreateCustomer();
+            Customer.CreateCustomer();
+            Customer.CreateCustomer();
+            Customer.CreateCustomer();
+            Customer.CreateCustomer();
+            Customer.CreateCustomer();
         }
     }
 }

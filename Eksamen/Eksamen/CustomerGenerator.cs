@@ -11,18 +11,27 @@ namespace Eksamen
 {
     public class CustomerGenerator
     {
-		//Skal skrive om alt så dette blir main, der alt skjer, muligens lage alt fra facade som kjøres på mainen.
-        static int CustomerID = 0;
+        //Skal skrive om alt så dette blir main, der alt skjer, muligens lage alt fra facade som kjøres på mainen.
+        static string[] Names = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
+
         public static void ThreadCustomer()
         {
 			BasicPack BasePack = new BasicPack();
 			Rarities RandomRaritiy = new Rarities(BasePack);
 
-			string[] Names = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
-            Random Rnd = new Random();
-            int i = Rnd.Next(0, 8);
-            string Name = Names[CustomerID];
-            CustomerID++;
+            bool NameFound = false;
+            string Name = "";
+            while (!NameFound)
+            {
+                Random Rnd = new Random();
+                int i = Rnd.Next(0, 9);
+                Name = Names[i];
+                if(Name != null)
+                {
+                    NameFound = true;
+                    Names[i] = null;
+                }
+            }
             Bazzar Bazz = Bazzar.Instance;
             while (Bazz.GetFinished() == false)
             {
