@@ -11,10 +11,10 @@ namespace Eksamen
     public static class Store
     {
         static int InnNumber = 0;
-        static string[] Names = new string[] { "Lion's Pride Inn", "Shady Rest Inn" };
+        static string[] InnNames = new string[] { "Lion's Pride Inn", "Shady Rest Inn" };
         public static void ThreadStore()
         {
-            string Inn = Names[InnNumber];
+            string Inn = InnNames[InnNumber];
             InnNumber++;
             Bazzar Bazz = Bazzar.Instance;
             while (Bazz.GetFinished() == false)

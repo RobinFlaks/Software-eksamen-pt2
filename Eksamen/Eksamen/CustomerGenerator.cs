@@ -12,7 +12,7 @@ namespace Eksamen
     public class CustomerGenerator
     {
         //Skal skrive om alt så dette blir main, der alt skjer, muligens lage alt fra facade som kjøres på mainen.
-        static string[] Names = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
+        static string[] CustomerNames = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
 
         public static void ThreadCustomer()
         {
@@ -25,11 +25,11 @@ namespace Eksamen
             {
                 Random Rnd = new Random();
                 int i = Rnd.Next(0, 9);
-                Name = Names[i];
+                Name = CustomerNames[i];
                 if(Name != null)
                 {
                     NameFound = true;
-                    Names[i] = null;
+                    CustomerNames[i] = null;
                 }
             }
             Bazzar Bazz = Bazzar.Instance;
