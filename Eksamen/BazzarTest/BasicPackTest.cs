@@ -10,6 +10,8 @@ namespace BazzarTest
 		[TestMethod]
 		public void GetDescription_Scenario_ExpectedBehavior()
 		{
+			//Test if the base description matches with " with a Rare Card" and that everything is working as intended
+
 			//Arrange
 			var BasePack = new BasicPack();
 			//Act
