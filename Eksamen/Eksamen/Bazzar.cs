@@ -8,6 +8,7 @@ namespace Eksamen
 {
     public sealed class Bazzar
     {
+        private int OperatingStoresFinished = 0;
         private Boolean Finished;
         private int ItemNumber;
         private Boolean ItemAvailable;
@@ -35,16 +36,22 @@ namespace Eksamen
 
         public void SetFinished(Boolean Finished)
         {
-            this.Finished = Finished;
+            OperatingStoresFinished++;
+            if (OperatingStoresFinished == 2)
+            {
+                this.Finished = Finished;
+            }
         }
 
         public void SetItemNumber(int ItemNumber)
         {
+            lock (TheBazzar)
             this.ItemNumber = ItemNumber;
         }
 
         public void SetItemAvailable(Boolean ItemAvailable)
         {
+            lock(TheBazzar)
             this.ItemAvailable = ItemAvailable;
         }
 
@@ -61,7 +68,7 @@ namespace Eksamen
         public Boolean GetItemAvailable()
         {
             Bazzar TheBazzar = Bazzar.Instance;
-            lock (TheBazzar) ;
+            lock (TheBazzar)
             return ItemAvailable;
         }
     }
