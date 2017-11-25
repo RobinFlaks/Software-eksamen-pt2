@@ -19,3 +19,10 @@ C:\Users\robin\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\obj\Debug\E
 C:\Users\robin\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\bin\Debug\Eksamen.exe.config
 C:\Users\robin\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\bin\Debug\Eksamen.exe
 C:\Users\robin\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\bin\Debug\Eksamen.pdb
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\bin\Debug\Eksamen.exe.config
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\bin\Debug\Eksamen.exe
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\bin\Debug\Eksamen.pdb
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\obj\Debug\Eksamen.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\obj\Debug\Eksamen.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\obj\Debug\Eksamen.exe
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\Eksamen\obj\Debug\Eksamen.pdb

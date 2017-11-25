@@ -18,8 +18,8 @@ namespace Eksamen
 			// to the screen, while at the same time adding the possiblitiy of only printing out the base GetDescription() string
 			Random Rand = new Random();
 			string[] Rarity = { " and a Legendary card", " and an Epic card", " and a Rare card",
-				"", "", "", "", "", };
-			string RandIndex = Rarity[Rand.Next(0, 3)];
+				"", "", "", "", "", "" };
+			string RandIndex = Rarity[Rand.Next(0, 8)];
 			string[] RandomlySelected = new string[3];
 			StringBuilder TotalStrings = new StringBuilder();
 				for (int i = 0; i < RandomlySelected.Length; i++)
