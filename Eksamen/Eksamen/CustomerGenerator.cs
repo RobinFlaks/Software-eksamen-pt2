@@ -12,7 +12,8 @@ namespace Eksamen
     public class CustomerGenerator
     {
         //Skal skrive om alt så dette blir main, der alt skjer, muligens lage alt fra facade som kjøres på mainen.
-        static string[] CustomerNames = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan", "Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
+        static string[] CustomerNames = new string[] { "Jaina", "Uther", "Malfurian", "Gul'dan",
+											"Valeera", "Anduin", "Rexxar", "Thral", "Garrosh" };
 
         public static void ThreadCustomer()
         {
@@ -38,7 +39,8 @@ namespace Eksamen
                 while (TheBazzar.GetItemAvailable() == true)
                 {
                     TheBazzar.SetItemAvailable(false);
-                    Console.WriteLine("                             " + Name + " bought Pack #" + TheBazzar.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
+                    Console.WriteLine("                             " + Name + " bought Pack #" + 
+					TheBazzar.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
                 }
                 Thread.Sleep(0);
             }

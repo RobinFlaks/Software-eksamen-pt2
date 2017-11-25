@@ -12,8 +12,14 @@ namespace Eksamen
         {
             Factory MainFactory = new Factory();
             MainFactory.StartProducing();
-            Console.ReadKey();
+			Pause();
 
         }
+
+		public static void Pause()
+		{
+			Console.ReadKey();
+			Console.WriteLine("Press any key to continue...");
+		}
     }
 }

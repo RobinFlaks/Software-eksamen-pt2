@@ -1,0 +1,16 @@
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\BazzarTest.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\BazzarTest.pdb
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Eksamen.exe
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Eksamen.pdb
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Eksamen.exe.config
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\obj\Debug\BazzarTest.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\obj\Debug\BazzarTest.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\obj\Debug\BazzarTest.dll
+C:\Users\User\Documents\GitHub\Software-eksamen-pt2\Eksamen\BazzarTest\obj\Debug\BazzarTest.pdb
