@@ -34,12 +34,12 @@ namespace Eksamen
         }
     
 
-        public void SetFinished(Boolean Finished)
+        public void SetFinished()
         {
             OperatingStoresFinished++;
             if (OperatingStoresFinished == 2)
             {
-                this.Finished = Finished;
+                Finished = true;
             }
         }
 

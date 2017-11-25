@@ -38,7 +38,7 @@ namespace Eksamen
                 while (TheBazzar.GetItemAvailable() == true)
                 {
                     TheBazzar.SetItemAvailable(false);
-                    Console.WriteLine("                             " + Name + " bought Pack #" + TheBazzar.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
+                    Console.WriteLine(String.Format("{0,100}", Name + " bought Pack #" + TheBazzar.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription()));
                 }
                 Thread.Sleep(0);
             }

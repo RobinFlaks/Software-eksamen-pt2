@@ -26,7 +26,7 @@ namespace Eksamen
                 }
                 Thread.Sleep(800);
             }
-            TheBazzar.SetFinished(true);
+            TheBazzar.SetFinished();
             
         }
 

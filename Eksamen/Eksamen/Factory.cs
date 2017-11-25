@@ -10,6 +10,7 @@ namespace Eksamen
     {
         public void StartProducing()  
         //to add more stores: add names under "InnNames" and change the number in Bazzar -> SetFinisheds if statement
+        //to add more Customers: add names under "CustomerNames"
         {
             Store.CreateStore();
             Store.CreateStore();
