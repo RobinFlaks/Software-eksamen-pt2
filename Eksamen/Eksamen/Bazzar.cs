@@ -51,7 +51,6 @@ namespace Eksamen
 
         public void SetItemAvailable(Boolean ItemAvailable)
         {
-            lock(TheBazzar)
             this.ItemAvailable = ItemAvailable;
         }
 
