@@ -11,7 +11,7 @@ namespace Eksamen
     public static class Store
     {
         static int InnNumber = 0;
-        static string[] InnNames = new string[] { "Lion's Pride Inn", "Shady Rest Inn" };
+        static string[] InnNames = new string[] { "Lion's Pride Inn", "Shady Rest Inn"};
         public static void ThreadStore()
         {
             string Inn = InnNames[InnNumber];
