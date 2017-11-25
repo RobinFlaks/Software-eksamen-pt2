@@ -70,5 +70,19 @@ namespace Eksamen
             lock (TheBazzar)
             return ItemAvailable;
         }
+
+        public bool PublishItem(int ItemNumber, string InnName)
+        {
+            lock (TheBazzar)
+                if (!GetItemAvailable())
+                {
+                    SetItemNumber(ItemNumber);
+                    Console.WriteLine(InnName + " put pack #" + ItemNumber + " up for sale");
+                    SetItemAvailable(true);
+                    return true;
+                }
+            return false;
+
+        }
     }
 }

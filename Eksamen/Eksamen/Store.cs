@@ -19,13 +19,11 @@ namespace Eksamen
             Bazzar TheBazzar = Bazzar.Instance;
             for (int i = 1; i <= 25; i++)
             {
-                while (TheBazzar.GetItemAvailable() == true)
+                bool ObjectForSale = false;
+                while(!ObjectForSale)
                 {
-                    Thread.Sleep(0);
+                    ObjectForSale = TheBazzar.PublishItem(i, Inn);
                 }
-                TheBazzar.SetItemNumber(i);
-                Console.WriteLine( Inn + " put pack #" + i + " up for sale");
-                TheBazzar.SetItemAvailable(true);
                 Thread.Sleep(800);
             }
             TheBazzar.SetFinished(true);
