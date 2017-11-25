@@ -10,7 +10,6 @@ namespace Eksamen
     {
         public void StartProducing()
         {
-            Bazzar Bazz = Bazzar.Instance;
             Store.CreateStore();
             Store.CreateStore();
             CustomerGenerator Customer = new CustomerGenerator();

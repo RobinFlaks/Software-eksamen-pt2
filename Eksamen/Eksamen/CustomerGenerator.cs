@@ -32,13 +32,13 @@ namespace Eksamen
                     CustomerNames[i] = null;
                 }
             }
-            Bazzar Bazz = Bazzar.Instance;
-            while (Bazz.GetFinished() == false)
+            Bazzar TheBazzar = Bazzar.Instance;
+            while (TheBazzar.GetFinished() == false)
             {
-                while (Bazz.GetItemAvailable() == true)
+                while (TheBazzar.GetItemAvailable() == true)
                 {
-                    Bazz.SetItemAvailable(false);
-                    Console.WriteLine(Name + " bought Pack #" + Bazz.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
+                    TheBazzar.SetItemAvailable(false);
+                    Console.WriteLine("                             " + Name + " bought Pack #" + TheBazzar.GetItemNumber() + BasePack.GetDescription() + RandomRaritiy.GetDescription());
                 }
                 Thread.Sleep(0);
             }

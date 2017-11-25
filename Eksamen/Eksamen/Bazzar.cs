@@ -60,8 +60,8 @@ namespace Eksamen
 
         public Boolean GetItemAvailable()
         {
-            Bazzar Bazz = Bazzar.Instance;
-            lock (Bazz) ;
+            Bazzar TheBazzar = Bazzar.Instance;
+            lock (TheBazzar) ;
             return ItemAvailable;
         }
     }

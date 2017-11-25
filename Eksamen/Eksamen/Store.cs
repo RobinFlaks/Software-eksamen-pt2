@@ -16,22 +16,22 @@ namespace Eksamen
         {
             string Inn = InnNames[InnNumber];
             InnNumber++;
-            Bazzar Bazz = Bazzar.Instance;
-            while (Bazz.GetFinished() == false)
+            Bazzar TheBazzar = Bazzar.Instance;
+            while (TheBazzar.GetFinished() == false)
             {
                 for (int i = 1; i <= 25; i++)
                 {
-                    while (Bazz.GetItemAvailable() == true)
+                    while (TheBazzar.GetItemAvailable() == true)
                     {
                         Thread.Sleep(0);
                     }
- 
-                    Bazz.SetItemNumber(i);
+
+                    TheBazzar.SetItemNumber(i);
                     Console.WriteLine( Inn + " put pack #" + i + " up for sale");
-                    Bazz.SetItemAvailable(true);
+                    TheBazzar.SetItemAvailable(true);
                     Thread.Sleep(800);
                 }
-                Bazz.SetFinished(true);
+                TheBazzar.SetFinished(true);
             }
         }
 
